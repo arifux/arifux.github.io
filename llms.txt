@@ -1,0 +1,19 @@
+# Ariful Islam — Product Designer & Design Engineer
+
+Ariful Islam is a product designer and design engineer based in Dhaka, Bangladesh. He focuses on enterprise SaaS, AI-enabled workflows, human-first UX, design systems, and production-ready front-end experiences.
+
+## Primary website
+
+- Portfolio: https://arifalislam.github.io/
+- Contact: mailto:arifalislam642@gmail.com
+- LinkedIn: https://www.linkedin.com/in/mr-arif
+- Behance: https://www.behance.net/mr-arif
+- GitHub: https://github.com/arifalislam
+
+## Focus areas
+
+- Product strategy and UX design
+- Enterprise SaaS and ERP workflows
+- Human-first AI workflow design
+- Design systems and front-end product engineering
+- Information architecture, prototyping, and interaction design

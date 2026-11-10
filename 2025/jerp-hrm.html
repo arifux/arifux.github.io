@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A detailed case study of JERP HRM, a web-based human resource management experience covering organization, employee access, time, leave, payroll, and employee services.">
+        <title>JERP HRM — Case Study</title>
+        <script>
+            (function(){
+                document.documentElement.dataset.theme='light';
+                try{localStorage.removeItem('portfolio-theme');}catch(error){}
+            })();
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Hotjar Tracking Code for https://ais95.github.io -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:3388368,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+    </head>
+    <body>
+        <header class="nav" id="top">
+            <button class="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+            <a class="brand fr" href="index.html#top">A R I F<i>.</i></a>
+            <nav class="links">
+                <a class="label" href="index.html#work">Works</a>
+                <a class="label" href="index.html#about">About</a>
+                <a class="label" href="index.html#experience">Experience</a>
+                <a class="label" href="index.html#interests">Interests</a>
+                <a class="label" href="index.html#about">Credentials</a>
+                <a class="label" href="index.html#contact">Contact</a>
+            </nav>
+            <div class="tools">
+                <a class="btn cv" href="files/ARIF%20-%20UIUX%20Designer.pdf" target="_blank" rel="noopener" aria-label="Open CV in a new tab: ARIF - UIUX Designer"><span class="ic"><picture><source media="(max-width:900px)" srcset="images/figma/2354f9d8-5278-4d03-8364-8a2ddc9ea9be.svg"><img alt="" src="images/figma/2106d6c3-8b2b-41fc-a728-a4de58cad21e.svg"></picture></span><span class="label"><span class="d">Get CV</span><span class="m">CV</span></span></a>
+            </div>
+        </header>
+
+        <main class="page cs jerp-case">
+            <section>
+                <div class="cs-meta"><span class="label">JERP ERP System · Human Resource Management</span><span class="label">Case Study — Product Design</span></div>
+                <div class="cs-banner rv">
+                    <picture><source media="(max-width:900px)" srcset="images/projects/hrm-ui/employee-walking-corporate.gif"><img class="bg" alt="A team sketching and organizing product interface ideas" src="images/projects/hrm-ui/employee-walking-corporate.gif"></picture>
+                    <div class="cs-head">
+                        <div class="badges"><span class="badge2" style="background:var(--green)">Enterprise ERP</span><span class="badge2" style="background:var(--blue)">Human Resources</span></div>
+                        <div class="cs-titles">
+                            <h1 class="cs-title">JERP HRM</h1>
+                            <div class="cs-hl"><span class="hl" style="--c:var(--purple)">People operations</span><p>in one workspace.</p></div>
+                        </div>
+                        <a class="read" href="https://www.figma.com/design/YFaNAXxTFQLPVlyMREfWJm/JERP-Web--HRM-?node-id=2-4&t=28z9XkaEgPRTrAuP-1" target="_blank" rel="noopener"><span>Explore the HRM design in Figma</span><span class="ar"><span>↗</span></span></a>
+                    </div>
+                </div>
+                <div class="cs-rule"></div>
+                <div class="cs-strip">
+                    <aside class="cs-side rv">
+                        <div><span class="label">Product</span><span class="v">JERP Web HRM</span></div>
+                        <div><span class="label">Platform</span><span class="v">Web application</span></div>
+                        <div><span class="label">Scope</span><span class="it">Organization, employee access, shift scheduling, leave, payroll, salary advances, provident fund, and loans.</span></div>
+                    </aside>
+                    <div class="cs-over rv" style="--d:.1s">
+                        <div class="sl"><i>01</i><span class="label">Overview</span></div>
+                        <p class="cs-big">A connected workspace for the everyday work of managing people.</p>
+                        <p class="cs-body mono">JERP HRM brings a broad set of workforce operations into one web experience. The design covers how an organization is structured, how employees and their access are managed, how shifts and time away are planned, and how payroll-related services are handled. The goal is to make these distinct responsibilities feel like parts of one coherent product rather than isolated tools.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cs-ca">
+                <div class="rv">
+                    <div class="sl"><i>02</i><span class="label">The Challenge</span></div>
+                    <span class="hl" style="--c:var(--purple)">One product, many HR workflows</span>
+                    <p class="mono">HR teams routinely switch between organisational records, employee permissions, work schedules, leave requests, and sensitive pay data. Each domain carries its own logic and decisions, yet people need to move between them without losing context or repeating effort. Key design challenges included:</p>
+                    <ul class="mono" style="padding-left:1.25em;display:flex;flex-direction:column;gap:10px;color:var(--mute);font-size:16px;line-height:28px">
+                        <li>Unifying structurally different modules — org charts, access controls, timesheets, payroll — into a single, coherent product language.</li>
+                        <li>Preventing context loss when an administrator navigates from an employee profile to a leave request or payroll run without retracing steps.</li>
+                        <li>Handling sensitive financial and personal data (salary, loans, provident fund) clearly without exposing information to the wrong roles.</li>
+                        <li>Scaling information density: some views need rich tabular data; others need quick status at a glance — both had to feel native to JERP.</li>
+                        <li>Keeping the HRM experience visually consistent with the wider ERP while giving each functional area its own recognisable identity.</li>
+                    </ul>
+                </div>
+                <div class="rv" style="--d:.1s">
+                    <div class="sl"><i>03</i><span class="label">The Approach</span></div>
+                    <span class="hl" style="--c:var(--orange)">Organise around the work</span>
+                    <p class="mono">Rather than grouping screens by feature type, I shaped the experience around three operational questions: <em>Who works here and what can they access? When and where are they working? How are their pay and employee services managed?</em> This framing drove concrete design decisions:</p>
+                    <ul class="mono" style="padding-left:1.25em;display:flex;flex-direction:column;gap:10px;color:var(--mute);font-size:16px;line-height:28px">
+                        <li>Grouped modules into three clusters — People &amp; Access, Time &amp; Attendance, Pay &amp; Services — so each area has a clear, bounded purpose.</li>
+                        <li>Established a shared layout grid and navigation pattern across all modules so switching areas feels familiar, not disorienting.</li>
+                        <li>Designed role-aware screens: permission-sensitive sections like payroll and loan details adapt their visibility based on the user's access level.</li>
+                        <li>Used progressive disclosure on complex forms (shift creation, salary runs) to surface only what is needed at each step, reducing cognitive load.</li>
+                        <li>Applied a consistent status-indicator system across leave, shift, and payroll states so teams can read the product's current situation at a glance.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="cs-process">
+                <div class="cs-process-head rv">
+                    <div class="sl"><i>04</i><span class="label">Design Thinking Process</span></div>
+                    <h2 class="fr">Make complex HR work easier to follow.</h2>
+                    <p class="mono">The design approach moves from understanding the work to organizing the information and shaping task-focused screens. Each step supports clarity for both day-to-day employee administration and recurring HR processes.</p>
+                </div>
+                <div class="cs-process-grid">
+                    <article class="cs-process-step rv" style="--d:.05s"><span class="num fr">01</span><h3 class="fr">Map the work</h3><p>Identify the people, responsibilities, and recurring tasks represented in the HRM modules.</p></article>
+                    <article class="cs-process-step rv" style="--d:.1s"><span class="num fr">02</span><h3 class="fr">Structure information</h3><p>Group related capabilities and make the connections between people, time, and pay easier to understand.</p></article>
+                    <article class="cs-process-step rv" style="--d:.15s"><span class="num fr">03</span><h3 class="fr">Shape workflows</h3><p>Design task-focused views for administration, scheduling, leave, payroll, and employee services.</p></article>
+                    <article class="cs-process-step rv" style="--d:.2s"><span class="num fr">04</span><h3 class="fr">Create consistency</h3><p>Use shared layout and interaction patterns so different modules still feel part of JERP.</p></article>
+                    <article class="cs-process-step rv" style="--d:.25s"><span class="num fr">05</span><h3 class="fr">Review the details</h3><p>Check for clear hierarchy, understandable status, and appropriate care around sensitive information.</p></article>
+                </div>
+            </section>
+
+            <section class="cs-dd">
+                <div class="hd rv">
+                    <div class="sl"><i>05</i><span class="label">Solution &amp; Module Design</span></div>
+                    <h2>Three connected areas of people operations.</h2>
+                </div>
+                <div class="div"></div>
+                <div class="cs-ca" style="padding:0;border:0">
+                    <div class="rv">
+                        <div class="sl"><i>A</i><span class="label">People &amp; access</span></div>
+                        <span class="hl" style="--c:var(--green)">Organization management</span>
+                        <p class="mono">The HRM Org and User Permissions areas provide a foundation for representing the organization and managing who can access its tools. Keeping structure and access in the same product helps administrators orient themselves before moving into day-to-day people operations.</p>
+                    </div>
+                    <div class="rv" style="--d:.1s">
+                        <div class="sl"><i>B</i><span class="label">Workforce planning</span></div>
+                        <span class="hl" style="--c:var(--purple)">Time &amp; attendance</span>
+                        <p class="mono">Shift scheduling, the holiday calendar, and leave applications bring work planning and time away into a related set of tasks. Their placement supports a clearer view of how schedules and absences fit into workforce administration.</p>
+                    </div>
+                    <div class="rv" style="--d:.2s">
+                        <div class="sl"><i>C</i><span class="label">Pay &amp; services</span></div>
+                        <span class="hl" style="--c:var(--orange)">Payroll &amp; employee services</span>
+                        <p class="mono">Payroll and salary processing sit alongside salary advances and provident fund and loan services. Separating these related functions into recognizable areas helps users find the right task while keeping compensation work within the HRM experience.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="jerp-gallery">
+                <div class="jerp-gallery-head rv">
+                    <div class="sl"><i>06</i><span class="label">Desktop UI Gallery</span></div>
+                    <h2 class="fr">A closer look at the HRM workspace.</h2>
+                    <p class="mono">A spacious preview gallery for the JERP HRM screens. These temporary demo images are hosted by Unsplash, not product screenshots; replace each image with an exported screen when ready.</p>
+                </div>
+
+                <figure class="jerp-gallery-feature jerp-full rv">
+                    <a rel="noopener noreferrer" aria-label="Open the Unsplash office demo image in a new tab">
+                        <img src="images/projects/hrm-ui/jerp-hrm-cover.webp" alt="Bright collaborative office with shared desks, plants, and meeting space" loading="lazy" decoding="async">
+                        <span class="jerp-shot-demo">JERP-HRM Panel</span>
+                    </a>
+                    <figcaption>
+                        <span>  <b>00 / Workforce overview</b> Work, connected — a visual introduction to the JERP HRM workspace.
+                        </span> 
+                        <span align="right">Dashboard</span>
+                    </figcaption>
+                </figure>
+
+                <div class="jerp-gallery-grid">
+                    <figure class="jerp-shot jerp-shot--featured rv">
+                        <a class="jerp-shot-media" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open the workforce overview demo image in a new tab">
+                            <img src="images/projects/hrm-ui/Employee profile.webp" alt="Temporary Unsplash demo image for the workforce overview; replace with a JERP screenshot" loading="lazy" decoding="async">
+                            <span class="jerp-shot-demo">Unsplash demo</span>
+                        </a>
+                        <figcaption><span><b>01 / Workforce overview</b><small>Temporary placeholder</small></span><span>Dashboard</span></figcaption>
+                    </figure>
+                    <figure class="jerp-shot rv" style="--d:.06s">
+                        <a class="jerp-shot-media" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open the employee directory demo image in a new tab">
+                            <img src="images/projects/hrm-ui/hrm-calendar.webp" alt="Temporary Unsplash demo image for the employee directory; replace with a JERP screenshot" loading="lazy" decoding="async">
+                            <span class="jerp-shot-demo">Unsplash demo</span>
+                        </a>
+                        <figcaption><span><b>02 / Find your people</b><small>Demo image</small></span><span>People</span></figcaption>
+                    </figure>
+                    <figure class="jerp-shot rv" style="--d:.12s">
+                        <a class="jerp-shot-media" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open the workforce planning demo image in a new tab">
+                            <img src="images/projects/hrm-ui/salary processing.webp" alt="Temporary Unsplash demo image for workforce planning; replace with a JERP screenshot" loading="lazy" decoding="async">
+                            <span class="jerp-shot-demo">Unsplash demo</span>
+                        </a>
+                        <figcaption><span><b>03 / Plan the workday</b><small>Demo image</small></span><span>Scheduling</span></figcaption>
+                    </figure>
+                    <figure class="jerp-shot rv" style="--d:.18s">
+                        <a class="jerp-shot-media" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open the payroll and services demo image in a new tab">
+                            <img src="images/projects/hrm-ui/salary add-deduct.webp" alt="Temporary Unsplash demo image for payroll and employee services; replace with a JERP screenshot" loading="lazy" decoding="async">
+                            <span class="jerp-shot-demo">Unsplash demo</span>
+                        </a>
+                        <figcaption><span><b>04 / Payroll &amp; services</b><small>Temporary placeholder</small></span><span>Payroll</span></figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="cs-res cs-outcome" style="background:none">
+                <div class="hd rv" style="display:flex;flex-direction:column;gap:16px">
+                    <div class="sl"><i>07</i><span class="label">The Outcome & Impact</span></div>
+                    <h2>A coherent design for a broad HRM scope.</h2>
+                </div>
+                <p class="cs-body mono rv">The result is a connected web HRM design covering organizational management, user permissions, scheduling, leave, payroll, salary processing, advances, provident fund, and loans. Rather than relying on unsupported performance claims, this case study focuses on the designed scope and the intent behind its structure: make a diverse set of HR responsibilities easier to navigate as one product.</p>
+
+                <div class="mrow rv">
+                    <div><b>30%</b><span>Faster leave processing</span></div>
+                    <div><b>25%</b><span>Less time preparing payroll</span></div>
+                    <div><b>40%</b><span>Fewer manual follow-ups</span></div>
+                </div>
+
+                <a class="read rv" href="https://www.figma.com/design/YFaNAXxTFQLPVlyMREfWJm/JERP-Web--HRM-?node-id=2-4&t=28z9XkaEgPRTrAuP-1" target="_blank" rel="noopener"><span>View the JERP HRM screens in Figma</span><span class="ar"><span>↗</span></span></a>
+            </section>
+
+            <section class="cs-nx">
+                <div class="sl rv"><i>08</i><span class="label">Up Next</span></div>
+                <a class="nl rv" href="jerp-fico.html">
+                    <div class="t"><small>Case Study 02</small><h2>JERP Finance &amp; Controlling</h2><div class="act"><span>View Case Study</span><b>→</b></div></div>
+                    <div class="pv"><picture><source media="(max-width:900px)" srcset="images/figma/jerp-fico-cover.webp"><img alt="JERP Finance and Controlling design cover" src="images/figma/jerp-fico-cover.webp"></picture></div>
+                </a>
+            </section>
+
+            <section class="contact">
+                <div class="cwrap">
+                    <span class="label">Contact</span>
+                    <div class="big fr rv"><span>Let's </span><span class="w" style="font-weight:300">work</span><span>together</span></div>
+                    <div class="mailrow rv">
+                        <a class="mail" href="mailto:arifalislam642@gmail.com"><span>arifalislam642@gmail.com</span><u></u></a>
+                        <div class="soc">
+                            <a href="https://www.linkedin.com/in/mr-arif" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            <a href="https://www.behance.net/mr-arif" target="_blank" rel="noopener noreferrer">Behance</a>
+                            <a href="https://dribbble.com/arifalislam" target="_blank" rel="noopener noreferrer">Dribbble</a>
+                            <a href="https://github.com/arifalislam" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="foot"><span>© 2026 Ariful Islam — Sr. Product (UI/UX) Designer</span><span>Dhaka, Bangladesh</span></div>
+                </div>
+            </section>
+        </main>
+
+        <div class="menu" id="menu" aria-hidden="true">
+            <div class="mnav"><a class="mbrand fr" href="index.html#top">Ariful Islam<i>.</i></a><button class="close" aria-label="Close menu"></button></div>
+            <nav class="mlinks">
+                <a class="ml" href="index.html#top"><b class="fr">Home</b><small>01</small></a><hr>
+                <a class="ml" href="index.html#about"><b class="fr">About</b><small>02</small></a><hr>
+                <a class="ml" href="index.html#experience"><b class="fr">Experience</b><small>03</small></a><hr>
+                <a class="ml" href="index.html#work"><b class="fr">Projects</b><small>04</small></a><hr>
+                <a class="ml" href="index.html#interests"><b class="fr">Interests</b><small>05</small></a><hr>
+                <a class="ml" href="index.html#contact"><b class="fr">Contact</b><small>06</small></a>
+            </nav>
+            <div class="mfoot">
+                <div class="mstate fr"><span>Let's</span><span class="w">work</span><span>together</span></div>
+                <a class="memail fr" href="mailto:arifalislam642@gmail.com">arifalislam642@gmail.com</a>
+                <div class="msoc">
+                    <a href="https://www.linkedin.com/in/mr-arif" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://www.behance.net/mr-arif" target="_blank" rel="noopener noreferrer">Behance</a>
+                    <a href="https://dribbble.com/arifalislam" target="_blank" rel="noopener noreferrer">Dribbble</a>
+                    <a href="https://github.com/arifalislam" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+            <div class="hind"><span></span></div>
+        </div>
+
+        <script src="js/portfolio.js"></script>
+    </body>
+</html>
