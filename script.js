@@ -190,7 +190,7 @@
     var qm=$('.quote__mark'); if(qm) rvTargets.push(qm);
     $$('.rule').forEach(function(r){rvTargets.push(r)});
     /* bring smaller content into view with the same gentle reveal */
-    $$('.rise,.arow,.rrow,.capl li,.art,.stats span').forEach(function(t,k){
+    $$('.rise,.arow,.rrow,.capl li,.art,.stats span,.cs-kicker,.cs-title-row,.cs-facts div,.cs-overview-copy>*,.cs-challenges-head>*,.cs-challenge,.cs-gallery,.cs-gallery-head>*,.cs-gallery-item,.cs-priority-list article,.cs-method-body>*,.cs-outcomes-intro>*,.cs-metric-card,.cs-next>a').forEach(function(t,k){
       t.classList.add('scroll-reveal');
       t.style.setProperty('--d',Math.min(k%4,3)*70+'ms');
       rvTargets.push(t);
@@ -198,7 +198,7 @@
     var ed=$('.edit'); if(ed) rvTargets.push(ed);
     /* image blocks clip open; their parent is watched because a clipped element is never "visible" */
     var hosts=new Map();
-    $$('.case__img,.fig .ph,.color,.studio__img .ph,.art .ph').forEach(function(el,k){
+    $$('.case__img,.fig .ph,.color,.studio__img .ph,.art .ph,.cs-gallery-image').forEach(function(el,k){
       el.setAttribute('data-img','');
       var host=el.parentElement; if(!hosts.has(host)) hosts.set(host,[]); hosts.get(host).push(el);
     });
