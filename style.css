@@ -4025,3 +4025,7 @@ img.fade.ok {
     margin: 0;
   }
 }
+
+#top h2 {
+  font-size: clamp(38px, 5vw, 64px);
+}
