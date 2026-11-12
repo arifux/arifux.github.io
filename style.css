@@ -1805,7 +1805,7 @@ body.nav-drawer-open {
   display: block;
   justify-self: start;
   color: var(--ink);
-  font: 400 clamp(36px, 4vw, 52px)/.9 var(--sans);
+  font: 700 clamp(36px, 4vw, 52px)/.9 var(--sans);
   letter-spacing: -.08em;
   writing-mode: vertical-rl;
   text-orientation: text;
@@ -2221,7 +2221,7 @@ body.nav-drawer-open {
 }
 
 .big h2 {
-  font-size: clamp(52px, 9.86vw, 142px);
+  font-size: clamp(52px, 9.86vw, 142px)!important;
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.03em
@@ -3282,7 +3282,7 @@ img.fade.ok {
 }
 
 .cs-title-row h1 {
-  font: 700 clamp(56px, min(10vw, 38svh), 320px)/.8 var(--sans);
+  font: 700 clamp(56px, min(16vw, 38svh), 320px)/.8 var(--sans);
   letter-spacing: -.0429em
 }
 
@@ -3332,6 +3332,10 @@ img.fade.ok {
   gap: var(--section-gap);
   padding: clamp(70px, 10vw, 140px) var(--pad);
   border-bottom: 1px solid var(--cs-line)
+}
+
+.case-page main h2 {
+  font-weight: 500
 }
 
 .cs-section>.cs-section-label,
@@ -3473,32 +3477,33 @@ img.fade.ok {
   display: grid;
   grid-column: 1/-1;
   grid-row: 3;
-  grid-template-columns: 1.1fr .9fr;
-  grid-template-areas:
-    "calendar processing"
-    "adjustments details";
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--section-gap);
   min-width: 0
 }
 
 .cs-gallery-item--bottom-one {
-  grid-area: calendar
+  grid-column: 1;
+  grid-row: 1
 }
 
 .cs-gallery-item--bottom-two {
-  grid-area: processing
+  grid-column: 2;
+  grid-row: 1
 }
 
 .cs-gallery-item--bottom-three {
-  grid-area: adjustments
+  grid-column: 1;
+  grid-row: 2
 }
 
 .cs-gallery-item--bottom-four {
-  grid-area: details
+  grid-column: 2;
+  grid-row: 2
 }
 
 .cs-gallery-image {
-  aspect-ratio: 1.4;
+  aspect-ratio: 1.6;
   overflow: hidden;
   background: #eef1f6
 }
@@ -3927,7 +3932,7 @@ img.fade.ok {
     grid-column: 1
   }
 
-  .cs-gallery-item {
+  .cs-gallery>.cs-gallery-item {
     grid-column: 1;
     grid-row: auto
   }
@@ -3935,12 +3940,12 @@ img.fade.ok {
   .cs-gallery-bottom {
     grid-column: 1;
     grid-row: auto;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "calendar"
-      "processing"
-      "adjustments"
-      "details"
+    grid-template-columns: 1fr
+  }
+
+  .cs-gallery-bottom .cs-gallery-item {
+    grid-column: 1;
+    grid-row: auto
   }
 
   .cs-gallery-item--small .cs-gallery-image,
