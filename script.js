@@ -16,6 +16,31 @@
       window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});
     });
   }
+  /* timeline horizontal controls */
+  $$('.story-timeline__carousel').forEach(function(carousel){
+    var timeline=$('.story-timeline__list',carousel);
+    var controls=$$('.story-timeline__arrow',carousel);
+    if(!timeline||!controls.length) return;
+    function updateTimelineControls(){
+      var maxScroll=timeline.scrollWidth-timeline.clientWidth;
+      controls.forEach(function(button){
+        var direction=Number(button.getAttribute('data-timeline-direction'));
+        button.disabled=direction<0?timeline.scrollLeft<=1:timeline.scrollLeft>=maxScroll-1;
+      });
+    }
+    controls.forEach(function(button){
+      button.addEventListener('click',function(){
+        var direction=Number(button.getAttribute('data-timeline-direction'));
+        timeline.scrollBy({
+          left:direction*Math.max(timeline.clientWidth*.75,220),
+          behavior:reduce?'auto':'smooth'
+        });
+      });
+    });
+    timeline.addEventListener('scroll',updateTimelineControls,{passive:true});
+    window.addEventListener('resize',updateTimelineControls);
+    updateTimelineControls();
+  });
   /* mobile and tablet navigation drawer */
   var navMenu=$('#nav-menu'), navDrawer=$('#nav-drawer');
   if(navMenu&&navDrawer){
