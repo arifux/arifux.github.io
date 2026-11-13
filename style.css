@@ -4147,6 +4147,21 @@ img.fade.ok {
   filter: grayscale(1);
 }
 
+#intro .color {
+  height: auto;
+  aspect-ratio: auto;
+}
+
+#intro .color__gif {
+  position: static;
+  inset: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 @media (min-width: 1001px) {
   #intro .fig {
     width: 56%;
