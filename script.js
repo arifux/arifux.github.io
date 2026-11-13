@@ -271,6 +271,28 @@
   /* copy email */
   var toast=$('#toast'), tt, copyTimer;
   function say(m){toast.textContent=m;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show')},2200)}
+  var comingSoon=$('#comingSoon'), customCursor=$('#cursor');
+  if(comingSoon){
+    $$('[data-coming-soon]').forEach(function(link){
+      link.addEventListener('click',function(e){
+        e.preventDefault();
+        if(typeof comingSoon.showModal==='function'){
+          if(customCursor) comingSoon.appendChild(customCursor);
+          comingSoon.showModal();
+        }
+        else say('This case study is still in the works');
+      });
+    });
+    $$('[data-coming-soon-close]',comingSoon).forEach(function(button){
+      button.addEventListener('click',function(){comingSoon.close()});
+    });
+    comingSoon.addEventListener('click',function(e){
+      if(e.target===comingSoon) comingSoon.close();
+    });
+    comingSoon.addEventListener('close',function(){
+      if(customCursor) document.body.appendChild(customCursor);
+    });
+  }
   function copy(){
     var mail=$('#mailAddr'), addr=mail.dataset.email||mail.textContent.trim();
     function copied(){
