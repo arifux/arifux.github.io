@@ -2709,6 +2709,59 @@ body.nav-drawer-open {
   display: none
 }
 
+.has-preloader body {
+  overflow: hidden
+}
+
+.preloader {
+  display: none
+}
+
+.has-preloader .preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  background: var(--black);
+  color: var(--white);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .55s var(--ease), visibility 0s linear .55s
+}
+
+.has-preloader .preloader.is-done {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none
+}
+
+.preloader__content {
+  text-align: center
+}
+
+.preloader__counter {
+  display: flex;
+  align-items: baseline;
+  font: 400 clamp(72px, 15vw, 160px)/.9 var(--mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.09em
+}
+
+.preloader__percent {
+  margin-left: .12em;
+  font-size: .35em;
+  letter-spacing: -.04em
+}
+
+.preloader__label {
+  margin-top: 20px;
+  color: var(--night-mute);
+  font: 400 10px/1.2 var(--mono);
+  letter-spacing: .16em;
+  text-transform: uppercase
+}
+
 .rv {
   opacity: 0;
   translate: 0 30px;
@@ -3282,6 +3335,10 @@ img.fade.ok {
 @media(prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto
+  }
+
+  .has-preloader .preloader {
+    transition: none
   }
 
   *,

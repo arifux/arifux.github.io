@@ -27,15 +27,25 @@
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;700&display=swap"
     rel="stylesheet">
+  <script>document.documentElement.classList.add('has-preloader')</script>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="case-page">
+  <div class="preloader" id="preloader" role="progressbar" aria-label="Page loading" aria-valuemin="0"
+    aria-valuemax="100" aria-valuenow="0" aria-valuetext="0%">
+    <div class="preloader__content">
+      <div class="preloader__counter"><span class="preloader__number">0</span><span class="preloader__percent">%</span></div>
+      <p class="preloader__label">Loading</p>
+    </div>
+  </div>
+
   <svg class="icon-sprite" width="0" height="0" aria-hidden="true">
     <symbol id="ar" viewBox="0 0 24 24">
       <path d="M7 17L17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
     </symbol>
   </svg>
+  <div class="progress" aria-hidden="true"></div>
   <div class="tip" id="tip" aria-hidden="true">View</div>
   <div class="cursor" id="cursor" aria-hidden="true"></div>
 

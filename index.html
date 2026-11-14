@@ -39,6 +39,7 @@
     rel="stylesheet">
 
   <!-- Site styles -->
+  <script>document.documentElement.classList.add('has-preloader')</script>
   <link rel="stylesheet" href="style.css">
   <!-- Hotjar Tracking Code for Mr Arif -->
   <script>
@@ -78,6 +79,14 @@
 </head>
 
 <body>
+
+  <div class="preloader" id="preloader" role="progressbar" aria-label="Page loading" aria-valuemin="0"
+    aria-valuemax="100" aria-valuenow="0" aria-valuetext="0%">
+    <div class="preloader__content">
+      <div class="preloader__counter"><span class="preloader__number">0</span><span class="preloader__percent">%</span></div>
+      <p class="preloader__label">Loading</p>
+    </div>
+  </div>
 
   <!-- Shared icon definitions -->
   <svg class="icon-sprite" width="0" height="0" aria-hidden="true">
@@ -406,7 +415,7 @@
         </div>
         <section class="story-timeline" aria-labelledby="story-timeline-title">
           <div class="story-timeline__heading">
-            <span class="label">A story in progress</span>
+            <span class="label">Behind the timestamp</span>
             <h2 id="story-timeline-title">1995 — 2026</h2>
           </div>
           <div class="story-timeline__carousel">
