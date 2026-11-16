@@ -1,4 +1,6 @@
 (function(){
+  /* keep the address bar clean: /index.html -> / */
+  try{var p=location.pathname; if(/\/index\.html$/.test(p)) history.replaceState(null,'',p.replace(/index\.html$/,'')+location.search+location.hash)}catch(e){}
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function $(s,c){return (c||document).querySelector(s)}
   function $$(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))}
