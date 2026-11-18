@@ -91,6 +91,9 @@ svg {
 .band {
   padding: clamp(56px, 6.67vw, 96px) max(var(--pad), env(safe-area-inset-right, 0px)) clamp(56px, 6.67vw, 96px) max(var(--pad), env(safe-area-inset-left, 0px))
 }
+footer.band{
+  padding-bottom: 16px
+}
 
 #process {
   padding-block: clamp(80px, 10vw, 144px);
@@ -2263,7 +2266,7 @@ body.nav-drawer-open {
   flex: 1;
   min-width: min(100%, 18rem);
   display: grid;
-  gap: 18px;
+  gap: 8px;
   justify-items: end
 }
 
@@ -2272,7 +2275,7 @@ body.nav-drawer-open {
   width: auto;
   max-width: 100%;
   justify-self: end;
-  font-size: clamp(26px, 3.75vw, 54px);
+  font-size: clamp(26px, 3.65vw, 48px);
   line-height: 1.1;
   color: var(--white);
   text-align: right;
