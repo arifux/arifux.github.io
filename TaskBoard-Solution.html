@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ARIF | TaskBoard Case Study </title> 
+  <meta name="description"
+    content="A case study on designing TaskBoard, a project management workspace that brings boards, task details, workload, and automations together for teams.">
+  <meta name="author" content="Ariful Islam">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#fdfaf6">
+  <link rel="canonical" href="https://arifux.github.io/TaskBoard-Solution.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="ARIF | AI Native Product UIUX Design Engineer">
+  <meta property="og:title" content="TaskBoard Case Study — ARIF | AI Native Product UIUX Design Engineer">
+  <meta property="og:description" content="A case study on designing TaskBoard, a project management workspace that brings boards, task details, workload, and automations together for teams.">
+  <meta property="og:url" content="https://arifux.github.io/TaskBoard-Solution.html">
+  <meta property="og:image" content="https://arifux.github.io/projects/pms/ai-pms.png">
+  <meta property="og:image:alt" content="ARIF | AI Native Product UIUX Design Engineer  ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TaskBoard Case Study — ARIF | AI Native Product UIUX Design Engineer">
+  <meta name="twitter:description" content="A case study on designing TaskBoard, a project management workspace that brings boards, task details, workload, and automations together for teams.">
+  <meta name="twitter:image" content="https://arifux.github.io/projects/pms/ai-pms.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="case-page">
+  <svg class="icon-sprite" width="0" height="0" aria-hidden="true">
+    <symbol id="ar" viewBox="0 0 24 24">
+      <path d="M7 17L17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+    </symbol>
+  </svg>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="tip" id="tip" aria-hidden="true">View</div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <button class="nav__menu" id="nav-menu" type="button" aria-label="Open menu" aria-controls="nav-drawer"
+      aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a class="logo" href="./" aria-label="Arif, back to top">arif<sup>®</sup></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="./#intro">Why Me</a>
+      <a href="./#work">My Works</a>
+      <a href="./#process">Process</a>
+      <a href="./#about">Story</a>
+      <a href="./#experiences">Experiences</a>
+      <a class="nav__cta" href="./#contact">Start a project <svg class="ico" aria-hidden="true">
+          <use href="#ar" />
+        </svg></a>
+    </nav>
+  </header>
+
+  <!-- Mobile navigation -->
+  <aside class="nav-drawer" id="nav-drawer" aria-hidden="true" aria-label="Mobile navigation">
+    <nav class="nav-drawer__links">
+      <a href="./#work"><small>01</small><span>My Works</span></a>
+      <a href="./#process"><small>02</small><span>Process</span></a>
+      <a href="./#about"><small>03</small><span>About Me</span></a>
+      <a href="./#experiences"><small>04</small><span>Experiences</span></a>
+      <a class="nav-drawer__cta" href="./#contact"><small>05</small><span>Start a project</span><svg class="ico"
+          aria-hidden="true">
+          <use href="#ar" />
+        </svg></a>
+    </nav>
+    <p class="nav-drawer__meta">MYMENSINGH, BANGLADESH / WORKING EVERYWHERE</p>
+  </aside>
+
+  <main id="top">
+    <!-- Hero / Case study introduction -->
+    <section class="cs-hero" style="background-image:url('projects/pms/ai-pms.webp')">
+      <div class="cs-kicker"><span class="label">Selected case study / 03</span><span>2026</span></div>
+      <div class="cs-title-row">
+        <h1>Task<br><span>Board</span></h1>
+        <p>One shared view of what's next, what's moving, and what's done.</p>
+      </div>
+
+      <dl class="cs-facts">
+        <div>
+          <dt>Discipline</dt>
+          <dd>Product design</dd>
+        </div>
+        <div>
+          <dt>Product</dt>
+          <dd>Project management SaaS</dd>
+        </div>
+        <div>
+          <dt>Platform</dt>
+          <dd>Web application / 1440px desktop</dd>
+        </div>
+        <div>
+          <dt>Scope</dt>
+          <dd>24 screens, from sign-in to billing</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- 01 / Overview -->
+    <section class="cs-section cs-overview rise">
+      <div class="cs-section-label cs-section-label--context">
+        <p class="label">01 / Overview</p>
+        <p>TaskBoard is a SaaS dashboard for planning, tracking, and delivering team work.</p>
+      </div>
+      <div class="cs-overview-copy">
+        <h2>A calm workspace for teams who plan, track, and ship together.</h2>
+        <p>TaskBoard is a project management workspace designed for a studio team. The Figma file covers the whole product: onboarding, a home dashboard, a projects portfolio, every project view (overview, list, board, timeline, and calendar), task details, personal task and inbox areas, team messages, files, workload planning, time tracking, reports, automations, and workspace settings and billing.</p>
+      </div>
+    </section>
+
+    <!-- 02 / Challenge -->
+    <section class="cs-section cs-challenges rise" aria-labelledby="cs-challenges-title">
+      <div class="cs-challenges-head">
+        <div class="cs-section-label cs-section-label--context">
+          <p class="label">02 / The challenge</p>
+          <p>Many views of the same work, one source of truth.</p>
+        </div>
+        <h2 id="cs-challenges-title">Many views of the same work, one source of truth.</h2>
+      </div>
+      <div class="cs-challenge-list">
+        <article class="cs-challenge">
+          <div class="cs-challenge-meta"><span class="cs-challenge-no">02 / The challenge</span>
+            <p>Project tools grow into many screens. Teams need to see status, owners, dates, and priority without opening each task.</p>
+          </div>
+          <h3 class="cs-challenge-title">Keep a large product easy to scan.</h3>
+          <div class="cs-response">
+            <span>What that means</span>
+            <p>The same task shows up on the board, in lists, on the timeline, and in the calendar. Each view needs to feel like part of one system, with consistent labels, colors, and controls.</p>
+          </div>
+        </article>
+        <article class="cs-challenge">
+          <div class="cs-challenge-meta"><span class="cs-challenge-no">03 / The design direction</span>
+            <p>A single navigation model (Home, My tasks, Inbox, Projects, Messages, Files, Team, Workload, Time tracking, Reports, Automations) with project views as tabs on top.</p>
+          </div>
+          <h3 class="cs-challenge-title">Organize around how teams work.</h3>
+          <div class="cs-response">
+            <span>Design response</span>
+            <p>Workspace-level destinations stay in the left rail. Everything that belongs to one project lives under its tabs: Overview, List, Board, Timeline, Calendar, and Files.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03 / Design approach -->
+    <section class="cs-section cs-priorities">
+      <div class="cs-section-label cs-section-label--context">
+        <p class="label">03 / Design approach</p>
+        <p>Start from the daily questions a team asks, then shape every screen around answering them quickly.</p>
+      </div>
+      <div class="cs-priority-list">
+        <h2 class="cs-priority-title">Make shared work easier to see and move.</h2>
+        <article><span>01 / ORIENT</span>
+          <h3>Orient people fast.</h3>
+          <p>A persistent left rail, workspace switcher, breadcrumb, global search, and favorite projects show where you are at all times.</p>
+        </article>
+        <article><span>02 / SCAN</span>
+          <h3>Make status scannable.</h3>
+          <p>Status colors, priority flags, due dates, and assignees give each card a clear hierarchy.</p>
+        </article>
+        <article><span>03 / FILTER</span>
+          <h3>Let people narrow down.</h3>
+          <p>Assignee, priority, and grouping controls plus task search sit above every project view.</p>
+        </article>
+        <article><span>04 / CONTEXT</span>
+          <h3>Keep context with the task.</h3>
+          <p>Description, subtasks, attachments, comments, dependencies, and time tracking live together on the task detail page.</p>
+        </article>
+        <article><span>05 / SYSTEM</span>
+          <h3>Build one visual language.</h3>
+          <p>A single purple accent, quiet neutrals, Inter type, and repeated card, table, and form patterns across all 24 screens.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 04 / Key screens -->
+    <section class="cs-section cs-challenges rise" aria-labelledby="cs-modules-title">
+      <div class="cs-challenges-head">
+        <div class="cs-section-label cs-section-label--context">
+          <p class="label">04 / Key screens</p>
+          <p>Board, task details, and automations.</p>
+        </div>
+        <h2 id="cs-modules-title">Three screens that carry the product.</h2>
+      </div>
+      <div class="cs-challenge-list">
+        <article class="cs-challenge">
+          <div class="cs-challenge-meta"><span class="cs-challenge-no">01 / Kanban board</span>
+            <p>The board groups tasks into To do, In progress, In review, and Complete, each with a live count and an add-task shortcut.</p>
+          </div>
+          <h3 class="cs-challenge-title">See what is next, moving, and done.</h3>
+          <div class="cs-response">
+            <span>Card design</span>
+            <p>Each card shows the task name, its group, a priority flag, the due date, the assignee, and subtask and link counts. Status colors on the column headers (grey, amber, blue, green) make progress readable at a glance.</p>
+          </div>
+        </article>
+        <article class="cs-challenge">
+          <div class="cs-challenge-meta"><span class="cs-challenge-no">02 / Task details</span>
+            <p>A two-column page: the work on the left, properties on the right.</p>
+          </div>
+          <h3 class="cs-challenge-title">Everything about a task in one place.</h3>
+          <div class="cs-response">
+            <span>What it holds</span>
+            <p>Description, subtasks with a progress bar (2 of 4 completed), attachments, and comments with @mentions. The side panel lists status, assignee, priority, dates, estimated and tracked time, a start-timer action, dependencies, and collaborators.</p>
+          </div>
+        </article>
+        <article class="cs-challenge">
+          <div class="cs-challenge-meta"><span class="cs-challenge-no">03 / Automations and rule builder</span>
+            <p>Four active rules sit beside a rule builder that reads as a sentence: WHEN a trigger happens, THEN actions run.</p>
+          </div>
+          <h3 class="cs-challenge-title">Less busywork, more of the work you love.</h3>
+          <div class="cs-response">
+            <span>How it works</span>
+            <p>Rules such as assigning review requests when a task moves to In review, reminding assignees 24 hours before a deadline, and notifying the lead on urgent work. Each rule shows its run count and last run, and the builder includes a Test rule action.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 05 / Outcome and impact -->
+    <section class="cs-section cs-outcomes rise" aria-labelledby="cs-outcomes-title">
+      <div class="cs-section-label cs-section-label--context">
+        <p class="label">05 / Outcome &amp; impact</p>
+        <p>A complete, consistent product design.</p>
+      </div>
+      <div class="cs-outcomes-intro">
+        <h2 id="cs-outcomes-title">A complete product, designed end to end.</h2>
+        <p>The result is a full set of connected screens for a project management SaaS, from first sign-in to billing. It gives a team one place to plan work, follow progress, collaborate on tasks, balance workload, track time, and automate repetitive steps.</p>
+      </div>
+      <div class="cs-outcomes-metrics">
+        <div class="cs-metric-ledger">
+          <article class="cs-metric-card"><span class="cs-metric-eyebrow">01 / SCREENS</span><b>24</b>
+            <div>
+              <h3>Connected product screens</h3>
+            </div>
+          </article>
+          <article class="cs-metric-card"><span class="cs-metric-eyebrow">02 / VIEWS</span><b>5</b>
+            <div>
+              <h3>Ways to view one project</h3>
+            </div>
+          </article>
+          <article class="cs-metric-card"><span class="cs-metric-eyebrow">03 / RULES</span><b>4</b>
+            <div>
+              <h3>Automation rules in the builder</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Continue exploring / Back to selected work -->
+    <section class="cs-next rise">
+      <a class="cs-next-back" href="./#work" aria-label="Back to works">
+        <svg class="ico" aria-hidden="true">
+          <use href="#ar" />
+        </svg>
+        <span>Back to Works</span>
+      </a>
+      <a href="JERP-FICO-Solution.html"><span>Explore Next Work</span>
+        <svg class="ico" aria-hidden="true">
+          <use href="#ar" />
+        </svg>
+      </a>
+    </section>
+
+    <!-- 06 / Contact -->
+    <section class="band dark contact rise" id="contact">
+      <div class="contact__mast">
+        <p class="label">06 / Contact</p>
+        <p class="avail">OPEN TO PRODUCT DESIGN COLLABORATIONS</p>
+      </div>
+      <a class="big" id="bigCopy" href="mailto:arifalislam642@gmail.com"
+        aria-label="Send an email to arifalislam642@gmail.com">
+        <h2><span class="big__muted">looking for,</span>Team Player?</h2>
+        <svg class="ico" aria-hidden="true">
+          <use href="#ar" />
+        </svg>
+      </a>
+      <div class="cdet">
+        <p>Have a project in mind? Let’s talk.</p>
+        <div class="mail">
+          <button type="button" id="mailAddr" data-email="arifalislam642@gmail.com"
+            aria-live="polite">arifalislam642@gmail.com</button>
+          <p class="mail__note" aria-hidden="true">Start with a hello.</p>
+          <svg viewBox="0 0 505 14" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 8C80 2 150 12 240 6S400 3 503 8" />
+          </svg>
+        </div>
+      </div>
+      <div class="rule"></div>
+      <div class="finfo">
+        <div class="loc"><small>BASED IN MYMENSINGH, BANGLADESH</small><span>Working closely, wherever you are.</span>
+        </div>
+        <div class="socials">
+          <a href="https://www.behance.net/mr-arif" rel="noopener" target="_blank">Behance ↗</a>
+          <a href="https://www.dribbble.net/arifux" rel="noopener" target="_blank">Dribbble ↗</a>
+          <a href="https://www.linkedin.com/in/mr-arif" rel="noopener" target="_blank">LinkedIn ↗</a>
+          <a href="https://github.com/arifux" rel="noopener" target="_blank">GitHub ↗</a>
+        </div>
+        <a class="totop" href="#top">BACK TO TOP ↑</a>
+      </div>
+      <div class="sig">
+        <b aria-hidden="true">i'm arif</b>
+        <div class="legal">
+          <p>© ARIFUL ISLAM | 2026</p>
+          <p>SR. PRODUCT (UI/UX) DESIGNER / DHAKA, BANGLADESH</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
